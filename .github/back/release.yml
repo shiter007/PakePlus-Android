@@ -30,7 +30,7 @@ jobs:
               run: ./gradlew assembleDebug
 
             - name: Create GitHub Release
-              uses: softprops/action-gh-release@v2
+              uses: softprops/action-gh-release@v2.3.0
               with:
                   files: app/build/outputs/apk/debug/*.apk
                   tag_name: 'PakePlus-v0.0.1'
